@@ -1,0 +1,7 @@
+edu
+cmu
+GET
+http
+a
+\w+a
+\d{2}c\w+
