@@ -1,0 +1,27 @@
+This is the full version of our "cloud computing platform". It contains:
+(1) log system
+(2) SWIM based failure detector for multiple failures
+(3) sdfs: distributed file system, 3 replicas for each file
+(4) computing system, maple-juice computing platform (very similar to map resuce). 
+
+commands:
+1.	grep: grep log file, which is similar to MP1.
+2.	list: show membership list.
+3.	selfId: show slef IP and timestamp.
+4.	Leave: volunteer to leave the group while keep all the files. (Note that the remaining nodes will try to add new replicas to maintain 3 replicas of each file)
+5.	join: join the system after a leave.
+6.	put: put a local file to sdfs. Called as “put localFileName” or “put localFileName globalFileName”.
+7.	delete: delete a file in sdfs. Called as “delete sdfsFileName”.
+8.	request: request the sdfs to send a file back to local folder. Called as “request sdfsFileName” or “request sdfsFileName localFileName”.
+9.	store: list the files stored at a node.
+10.	ls: list the ips that a file is stored on. Called as “ls sdfsFileName”. 
+11. cloud computing commands examples:
+    mode  exe            num   prefix   input file   outputfile  upload_small_files  isfolder  delete_intermid_file
+    maple wordCountMap    3    midVM    vm1.log                       1                 false	
+    juice linkGraphReduce 3    midGraph             GraphOutPut                                   0
+
+    Note: make sure you have put the data and exe files into sdfs before start using our "cloud computing" functionality.
+    
+Nice to work with my lovely VMs!!!!!!!
+  
+

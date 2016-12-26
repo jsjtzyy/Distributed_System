@@ -1,0 +1,14 @@
+Important message: Coordiantor machine (the one that helps other machines to join)
+Coordinator : Machine 1 for group 20 (with ip 172.22.148.194, this is hard coded in our code)
+This machine should be started first, otherwise other machines can't find each other.
+
+Here is the commands we implemented for our MP2:
+1. list: list all the machines in membership list
+2. leave: volunteer to leave the system, this leave is marked in log.log.
+3. join: rejoin this machine to the system after leave command. This will help a machine to join a system when the coordinator is online.
+         When the coordinator is down, you can't  join the system
+4. grep: used to grep log file.
+         eg. : grep fail
+5. prob: used to set package loss rate. First, type “prob” and press “Enter”, 
+         then type the new package loss rate(eg. 0.03) and press “Enter” again.  
+         The default loss rate is 0.
