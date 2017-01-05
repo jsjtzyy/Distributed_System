@@ -1,5 +1,3 @@
-#This project is established for CS425 MP1
-
 # How to build:
 
 #Tested on VM cluster. In the directory of MP1, input:
